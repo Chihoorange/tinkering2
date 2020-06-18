@@ -37,9 +37,7 @@
 
   <body style=’margin : 0px; overflow: hidden;’>
   <a-scene embedded arjs=’sourceType: webcam;’>
-    <a-assets>
-      <a-asset-item id="bags" src="./images/bags.gltf" response-type="arraybuffer" ></a-asset-item>
-    </a-assets>
+
     <!-- <div class="arjs-loader">
     <div>Loading, please wait...</div>
     </div>
@@ -67,7 +65,7 @@
 <!--       <a-entity attribute="rotation" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"> -->
         <!-- <a-box position = '0 0.5 0' material='opacity: 0.5:'color='blue'> -->
         <!-- <a-scene gltf-model="dracoDecoderPath: ./draco/;"> -->
-          <a-entity gltf-model="#bags"></a-entity>
+          <a-entity gltf-model="url(./images/bags.glb)"></a-entity>
         <!-- </a-scene> -->
       
          <!-- image insert  -->
