@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
 
     <!-- import image tracking -->
 <!--     <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
@@ -37,7 +38,7 @@
   <body style=’margin : 0px; overflow: hidden;’>
   <a-scene embedded arjs=’sourceType: webcam;’>
     <a-assets>
-      <a-asset-item id="bags" src="/images/bags.glb"></a-asset-item>
+      <a-asset-item id="bags" src="/images/bags.gtf" response-type="arraybuffer" ></a-asset-item>
     </a-assets>
     <!-- <div class="arjs-loader">
     <div>Loading, please wait...</div>
